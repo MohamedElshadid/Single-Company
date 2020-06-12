@@ -21,9 +21,18 @@
             </li>
           </ul>
         @else
-        <ul class="navbar-nav">
+          <ul class="navbar-nav">
             <li class="nav-item active">
               <a style="display: block;padding: .5rem 1rem;text-decoration:none" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+          <ul class="navbar-nav mr">
+            <li class="nav-item active">
+              <a href="{{ route('logout') }}"  style="display: block;padding: .5rem 1rem;text-decoration:none" onclick="event.preventDefault();
+                  document.getElementById('logout-form').submit();">Logout</a>
+              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                  @csrf
+              </form>            
             </li>
           </ul>
         @endguest

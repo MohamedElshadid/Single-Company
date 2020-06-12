@@ -65,6 +65,15 @@
           <a class="nav-link" href="#" data-scroll="map404">Map</a>
         </li>
       </ul>
+      <ul class="navbar-nav mr">
+        <li class="nav-item active">
+          <a href="{{ route('logout') }}"  style="display: block;padding: .5rem 1rem;text-decoration:none" onclick="event.preventDefault();
+              document.getElementById('logout-form').submit();">Logout</a>
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+              @csrf
+          </form>            
+        </li>
+      </ul>
     @endguest
   </div>
 
