@@ -9,11 +9,24 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        @guest
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a style="display: block;padding: .5rem 1rem;text-decoration:none" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+          <ul class="navbar-nav mr">
+            <li class="nav-item active">
+              <a style="display: block;padding: .5rem 1rem;text-decoration:none" href="{{ route('login') }}">Login</a>
+            </li>
+          </ul>
+        @else
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a style="display: block;padding: .5rem 1rem;text-decoration:none" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
-          </li>
-        </ul>
+            <li class="nav-item active">
+              <a style="display: block;padding: .5rem 1rem;text-decoration:none" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        @endguest
       </div>
       <div class="contact_us">
       @foreach ($contact as $cont )

@@ -6,32 +6,66 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" data-scroll="project">projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" data-scroll="services">Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" data-scroll="client">Clients</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" data-scroll="info">Info</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" data-scroll="contact">Contact</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" data-scroll="testimonial">Testimonials</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" data-scroll="map404">Map</a>
-      </li>
-    </ul>
+    @guest
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-scroll="project">projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-scroll="services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-scroll="client">Clients</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-scroll="info">Info</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-scroll="contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-scroll="testimonial">Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-scroll="map404">Map</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav mr">
+        <li class="nav-item active">
+          <a style="display: block;padding: .5rem 1rem;text-decoration:none" href="{{ route('login') }}">Login</a>
+        </li>
+      </ul>
+    @else
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-scroll="project">projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-scroll="services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-scroll="client">Clients</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-scroll="info">Info</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-scroll="contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-scroll="testimonial">Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-scroll="map404">Map</a>
+        </li>
+      </ul>
+    @endguest
   </div>
 
   <div class="contact_us">
