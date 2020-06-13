@@ -43,11 +43,11 @@ nav .contact_us span {
 }
 nav .contact_us i {
 	color: var(--secondColor);
-	font-size: 24px
+	font-size: 23px
 }
 .social_media {
 	color: white;
-	margin: 0 100px
+	margin: 0 10px
 }
 .information {
 	height: 92vh;

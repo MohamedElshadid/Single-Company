@@ -33,7 +33,7 @@
           <a class="nav-link" href="#" data-scroll="map404">Map</a>
         </li>
       </ul>
-      <ul class="navbar-nav mr">
+      <ul class="navbar-nav ml-5">
         <li class="nav-item active">
           <a style="display: block;padding: .5rem 1rem;text-decoration:none" href="{{ route('login') }}">Login</a>
         </li>
@@ -65,7 +65,7 @@
           <a class="nav-link" href="#" data-scroll="map404">Map</a>
         </li>
       </ul>
-      <ul class="navbar-nav mr">
+      <ul class="navbar-nav ml-5">
         <li class="nav-item active">
           <a href="{{ route('logout') }}"  style="display: block;padding: .5rem 1rem;text-decoration:none" onclick="event.preventDefault();
               document.getElementById('logout-form').submit();">Logout</a>
@@ -76,22 +76,31 @@
       </ul>
     @endguest
   </div>
-
-  <div class="contact_us">
-    @foreach ($contact as $cont )
-    <i class="fa ml-3 fa-mobile"></i>
-    <span class="ml-2">{{$cont->phoneNo}}</span>
-    <i class="fa ml-3 fa-envelope"></i>
-    <span class="ml-2">{{$cont->email}}</span>
-  </div>
-  <div class="social_media contact_us">
-    <a href="{{$cont->instaLink}}"><i class="fa fa-instagram ml-2"></i></a>
-    <a href="{{$cont->facebookLink}}"><i class="fa fa-facebook-f ml-2"></i></a>
-    <a href="{{$cont->pinterestLink}}"><i class="fa fa-pinterest ml-2"></i></a>
-    <a href="{{$cont->wLink}}"><i class="fa fa-vk ml-2"></i></a>
-
-
-    @endforeach
+  <div class="row mt-2">
+    <div class="col-md-7">
+      <div class="contact_us row">
+        @foreach ($contact as $cont )
+        <div class="col-sm-12 ">
+          <i class="fa ml-3 fa-mobile"></i>
+          <span class="ml-2">{{$cont->phoneNo}}</span>
+        </div>
+        <div class="col-sm-12">
+          <i class="fa ml-3 fa-envelope"></i>
+          <span class="ml-2">{{$cont->email}}</span>
+        </div>
+        @endforeach
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="social_media contact_us">
+        @foreach ($contact as $cont )
+          <a href="{{$cont->instaLink}}"><i class="fa fa-instagram ml-2"></i></a>
+          <a href="{{$cont->facebookLink}}"><i class="fa fa-facebook-f ml-2"></i></a>
+          <a href="{{$cont->pinterestLink}}"><i class="fa fa-pinterest ml-2"></i></a>
+          <a href="{{$cont->wLink}}"><i class="fa fa-vk ml-2"></i></a>
+        @endforeach
+      </div>
+    </div>
   </div>
 </nav>
 <!-- start information -->
