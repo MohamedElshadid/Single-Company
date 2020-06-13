@@ -6,6 +6,7 @@
     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
         @csrf
     </form>
+    <div style="clear:both"></div>
     <div class="container">
         <div class="page-header mt-4">
             <h1 class="text-center text-info" style="font-weight: bold;font-family: Times New Roman">
@@ -50,8 +51,8 @@
                         <hr>
                         @endforeach
                         @elseif(!$quizData->isEmpty())
-                        <h2 class="text-center text-info">Your Quiz</h2>
-                        <div class="row text-center">
+                        <h2 class="text-center text-info mt-3">Your Quiz</h2>
+                        <div class="row text-center mb-5">
                             @foreach($quizData as $data)
                             <div class="col-md-6">
                                 <p class="lead"> Your Area: <span class="text-info">{{ $data ->area}}</span></p>
@@ -77,7 +78,7 @@
     </div>
     <!-- Chat modal -->
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" style="position: absolute;left:50%;">
+    <button type="button" class="btn btn-primary btn_chat" data-toggle="modal" data-target="#exampleModalCenter">
         Chat with Admin
     </button>
     <!-- Modal -->
