@@ -30,10 +30,29 @@ class UserController extends Controller
         return view('projectView',['project'=>$project,'relProjects'=>$relProjects,'contact'=>$contact]);
 
     }
-    public function allprojects(){
-        $projects = Project::all();
+    public function allprojects($category=null){
+
+        if ($category)
+        {
+           $category = Category::where('name',$category)->orWhere('name','like','%'."$category".'%')->get();
+           if($category->count()>0)
+           {
+                         $projects= Project::where('category_id',$category[0]->id)->get();
+
+
+           }else{
+               $projects =[];
+           }
+        }else {
+                    $projects = Project::all();
+
+        }
+
+
+
         $contact= Contact::limit(1)->get();
         $categories = Category::all()->pluck('name','id')->toArray();
+        // dd($categories);
         return view('AllProjectShow',['projects'=>$projects,'contact'=>$contact,'categories'=>$categories]);
 
     }

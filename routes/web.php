@@ -62,7 +62,8 @@ Route::resource('project.images', 'ProjectImageController');
 Route::post('/contact','ConsultationController@send');
 // Route::post('/quizContact','QuizControllerSendingMail@sendEmail');
 Route::get('/','UserController@index');
-Route::get('/allproject','UserController@allprojects');
+// Route::get('/allproject','UserController@allprojects');
+Route::get('/allproject/{category?}','UserController@allprojects')->where('category', '[A-Za-z1-9]+')->name('listAllProjects');
 
 
 Route::get('view/{id}', 'UserController@view')->name('project.view');
@@ -72,4 +73,6 @@ Route::post('jopapply/{id?}', 'JopApplicantController@store')->where('id', '[0-9
 Route::get('jops', 'JopApplicantController@index')->name('jops');
 
 
-
+Route::any('sss', function () {
+    return phpinfo();
+});

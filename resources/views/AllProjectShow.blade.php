@@ -75,7 +75,7 @@
       <div class="list-group mb-2" >
         <h1>All Categories</h1>
         @foreach($categories as $category)
-          <a href="#" class="list-group-item list-group-item-action list-group-item-info mb-1">{{$category}}</a>
+      <a href="{{route('listAllProjects',$category)}}" class="list-group-item list-group-item-action list-group-item-info mb-1">{{$category}}</a>
         @endforeach
       </div>
     </div>
