@@ -1,8 +1,8 @@
 <div class="header">
-<nav class="navbar navbar-expand-lg text-center">
+<nav class="navbar navbar-expand-lg navbar-dark text-center" style="background-color:#000 !important">
   <a class="navbar-brand" href="#"><img data-src="/images/company_logo.PNG" alt="logo image"> </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <span class="navbar-toggler-icon" ></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -11,25 +11,25 @@
         <li class="nav-item active">
           <a class="nav-link" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="#" data-scroll="project">projects</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="#" data-scroll="services">Services</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="#" data-scroll="client">Clients</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="#" data-scroll="info">Info</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="#" data-scroll="contact">Contact</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="#" data-scroll="testimonial">Testimonials</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="#" data-scroll="map404">Map</a>
         </li>
       </ul>
@@ -43,25 +43,25 @@
         <li class="nav-item active">
           <a class="nav-link" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="#" data-scroll="project">projects</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="#" data-scroll="services">Services</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="#" data-scroll="client">Clients</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="#" data-scroll="info">Info</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="#" data-scroll="contact">Contact</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="#" data-scroll="testimonial">Testimonials</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="#" data-scroll="map404">Map</a>
         </li>
       </ul>
@@ -127,33 +127,5 @@
         <span class="mouse-message fadeIn" style="color:black">Explore</span> <br />
         <i class="fa fa-angle-down m-top-10 fadeIn mouse-message"></i>
     </a>
-<!-- <div style="background-image: url(images/pictures_projects/3.jpeg);" class="information">
-  <div class="overlayer"></div>
-  <div class="border_box"></div>
-  <div class="information_content text-center">
-    <h2>Ctya hamada Maxen Natoah</h2>
-    <p>Lorem ipsum dolor sit amet consectetur</p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
-      consequuntur sapiente, provident ea saepe blanditiis! Amet quas labore
-      maxime dignissimos quo! Aliquam tenetur minima ullam nobis sed
-      assumenda, neque veniam
-    </p>
-    <button>связаться с нами</button>
-    <div class="starting">
-      <div></div>
-    </div>
-  </div>
-  <div class="buttons_call">
-    <div class="mb-1">
-      <button class="call_me phone"><i class="fas fa-phone-alt fa-x"></i></button>
-    </div>
-    <div>
-      <button class="call_me tri">
-        <i class="fas fa-caret-up fa-2x"></i>
-      </button>
-    </div>
 
-  </div>
-</div> -->
 </div>

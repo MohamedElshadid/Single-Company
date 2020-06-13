@@ -8,7 +8,7 @@
 <!-- Button trigger modal -->
 <button class="open_quizes_modal" style="display: none" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_quiz">
   Launch quizes modal
-</button> -->
+</button>
 <div class="modal modal_quizes fade " id="modal_quiz" tabindex="-1" role="dialog" aria-labelledby="quizModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
