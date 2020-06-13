@@ -21,7 +21,7 @@
 @stack('token')
 </head>
 
-<body>
+<body class="nice">
 
 
         <main id="app">

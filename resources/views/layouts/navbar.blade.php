@@ -20,7 +20,7 @@
 
 </head>
 
-<body>
+<body class="nice">
     <div>
         <main id="app">
             @yield('content')

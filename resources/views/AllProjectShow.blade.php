@@ -81,18 +81,18 @@
 </div>
  <!-- start projects -->
  <div class="row mt-1">
-    <div class="col-md-3">
-      <div class="list-group mb-2" >
-        <h1>All Categories</h1>
-        @foreach($categories as $category)
-      <a href="{{route('listAllProjects',$category)}}" class="list-group-item list-group-item-action list-group-item-info mb-1">{{$category}}</a>
-        @endforeach
+    <div class="col-md-3" style="background-color: black;height:580px">
+      <h1 style="margin-top:60px" class="text-center text-light">All Categories</h1>
+      <div class="list-group mb-2 .nice" style="height: 400px;overflow-x: hidden;">
+          @foreach($categories as $category)
+            <a href="{{route('listAllProjects',$category)}}" class="list-group-item list-group-item-action text-light mb-1 mt-2" style="background-color:#c19e70 !important;width:60%;margin:0 auto">{{$category}}</a>
+          @endforeach
       </div>
     </div>
-    <div class="col-md-9">
-      <section class="projects">
+    <div class="col-md-9" style="background-color:#c19e70">
+      <section class="projects text-center">
         @if(count($projects)>0)
-        <h2 class="text-light">HAWN NPOEktbi:</h2>
+        <h2 class="text-light">All Projects</h2>
           <div class="row">
             @foreach ($projects as $project)
             <div style="background-image: url(/projectimages/{{$project->mainImage}});" class="project_content col-md-4 col-sm-6 pb-3">

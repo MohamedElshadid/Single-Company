@@ -1,7 +1,7 @@
  <!-- start projects -->
  <section class="projects" id="project">
    @if(count($projects)>0)
-   <h2 class="text-left">HAWN NPOEktbi:</h2>
+   <h2 class="text-left text-center">Latest Projects</h2>
    <div class="container-fluid">
      <div class="row">
        @foreach ($projects as $project)
