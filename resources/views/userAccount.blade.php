@@ -12,6 +12,7 @@
             <h1 class="text-center text-info" style="font-weight: bold;font-family: Times New Roman">
                 Welcome {{$userName}} To Your Profile<span class="pull-right label label-default"></span></h1>
         </div>
+        <br>
         <div class="row">
             <div class="col-md-12">
                 <div class="panel with-nav-tabs panel-success">
