@@ -7,13 +7,17 @@
                     <div class="col-lg-8">
                     {{ Form::model( $orderUpdated ,['route' => ['manager.AdminOrder.update' , $orderUpdated],'enctype' => 'multipart/form-data','method'=>'put'])}}
                   
-                    <div class="form-group">
+                        <div class="form-group">
                             <label for="exampleFormControlFile1" class="text-light">Enter Description of Order</label>
                             {!! Form::text('description', null,['class'=>'form-control']) !!}    
-                    </div>
+                        </div>
                         <div class="form-group text-light">
-                            <label for="exampleFormControlFile1"> Enter State Of Order</label>
-                            {!! Form::text('state', null,['class'=>'form-control']) !!}    
+                            <label for="exampleFormControlFile1" class="text-light">Change State For Order</label>
+                            <select name="state" class="form-control">
+                                <option value="underwork">underwork</option>
+                                <option value="prepare">prepare</option>
+                                <option value="done">done</option>
+                            </select>
                         </div>
 
                         <div class="form-group text-light">
@@ -23,7 +27,7 @@
 
                         <div class="form-group text-light">
                             <label for="exampleFormControlFile1"> Add Image Of UserOrder</label>
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1" name="orderImg">
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1" name="contractImg">
                         </div>
                         <button type="submit" class="btn btn-info">Save !</button>
                     </form>
