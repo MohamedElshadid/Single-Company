@@ -44,6 +44,7 @@ Route::middleware('manager')->prefix('manager')->name('manager.')->group(functio
     Route::get('users/{users}/order', 'OrderAdminController@updateOrder')->name('order');
     Route::resource('jopAppli' , 'JopApplicantController');
     Route::resource('chatList' , 'ChatAdminController');
+    Route::resource('topics' , 'TopicController');
 
 
 });//manager routes

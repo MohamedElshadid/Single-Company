@@ -9,6 +9,7 @@ use App\Logo;
 use App\Review;
 use App\Category;
 use App\ProjectImage;
+use App\Topic;
 use Illuminate\Support\Facades\DB;
 class UserController extends Controller
 {
@@ -20,8 +21,9 @@ class UserController extends Controller
         $contact= Contact::limit(1)->get();
         $logos= Logo::all();
         $reviews= Review::all();
+        $topics = Topic::limit(6)->get();
        
-        return view('home',['projects'=>$projects,'ceoInfo'=>$ceoInfo,'contact'=>$contact,'logos'=>$logos,'reviews'=>$reviews]);
+        return view('home',['projects'=>$projects,'ceoInfo'=>$ceoInfo,'contact'=>$contact,'logos'=>$logos,'reviews'=>$reviews, 'topics'=>$topics]);
     }
     public function view($id){
         $contact= Contact::limit(1)->get();
