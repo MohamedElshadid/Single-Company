@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use App\Message;
-
+use Auth;
+use Uuid;
 class ChatAdminController extends Controller
 {
     /**
@@ -16,8 +17,9 @@ class ChatAdminController extends Controller
     public function index($id = 1)
     {
         $users = User::where('id', '!=', auth()->id())->get();
-        // dd($id);
+        
         $chatData = Message::where('user_id', '=', $id)->get();
+        // dd($id);
         return view('manager.adminChat', [
             'users' => $users, 'data' => [],
             'chatData' => $chatData

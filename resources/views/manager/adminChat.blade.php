@@ -16,11 +16,11 @@
 
 <script src="https://use.typekit.net/hoy3lrg.js"></script>
 <script>
-	try {
-		Typekit.load({
-			async: true
-		});
-	} catch (e) {}
+  try {
+    Typekit.load({
+      async: true
+    });
+  } catch (e) {}
 </script>
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'>
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'>
@@ -44,7 +44,9 @@
             <div class="wrap">
               <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
               <div class="meta">
-                <a href="{{route('manager.{id?}.index',$instance->id)}}">
+                <!-- <a href="{{route('manager.chatList.index',$instance->id)}}"> -->
+                <a href="{{url('manager/chatList/'.$instance->id)}}">
+
                   <p class="name">{{ $instance->name }}</p>
                 </a>
                 <p class="preview">Wrong. You take the gun, or you pull out a bigger one. Or, you call their bluff. Or, you do any one of a hundred and forty six other things.</p>
@@ -98,19 +100,19 @@
       </div>
       <!--  -->
       <div class="message-input">
-				<div class="wrap">
-					<input type="text" placeholder="Write your message..." />
-					<input type="file" id="file1" style="display:none">
-					<i id='attachment' class="fa fa-paperclip attachment" aria-hidden="true"> </i>
-					<button class="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
-				</div>
-			</div>
+        <div class="wrap">
+          <input type="text" placeholder="Write your message..." />
+          <input type="file" id="file1" style="display:none">
+          <i id='attachment' class="fa fa-paperclip attachment" aria-hidden="true"> </i>
+          <button class="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+        </div>
+      </div>
     </div>
   </div>
   <script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script>
-	<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-	<script src="../../js/chat.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src="../../js/chat.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 
 </html>

@@ -43,12 +43,10 @@ Route::middleware('manager')->prefix('manager')->name('manager.')->group(functio
     Route::resource('AdminOrder', 'OrderAdminController');
     Route::get('users/{users}/order', 'OrderAdminController@updateOrder')->name('order');
     Route::resource('jopAppli', 'JopApplicantController');
-    Route::resource('chatList/{id?}', 'ChatAdminController');
+    Route::get('chatList/{id}', 'ChatAdminController@index');
+    Route::resource('chatList', 'ChatAdminController');
+
     Route::resource('topics', 'TopicController');
-    // Route::resource('chatList', 'ChatAdminController@index')->except([
-    //     'index'
-    // ]);
-    // Route::get('/customers/{page?}', 'CustomerController@index');
 }); //manager routes
 
 Route::middleware('user')->group(function () {
