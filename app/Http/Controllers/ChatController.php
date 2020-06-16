@@ -30,7 +30,7 @@ class ChatController extends Controller
     public function create()
     {
 
-        dd(Auth::user()->id);
+        // dd(Auth::user()->id);
     }
 
     /**

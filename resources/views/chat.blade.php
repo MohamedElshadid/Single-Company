@@ -35,18 +35,14 @@
 			</div>
 			<div class="messages">
 				<ul>
-
 					<li class="replies">
 						<img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
 						<p>Hello, Iam the admin .. You can talk to me ; i will reply soon</p>
 					</li>
-
-
 					@forelse ($data as $item)
 					@if ($item->img)
 					<li class="sent">
 						<img src="/chatfiles/{{$item->img}}" alt="" />
-
 						<p style="font-size:22; ">
 							<img src="/chatfiles/{{$item->img}}" style="width: 200px;height:200px;" alt="" srcset="">
 							<br>
@@ -58,7 +54,6 @@
 						<p>{{$item->body}}</p>
 					</li>
 					@endif
-
 					@empty
 					<!-- <div class="danger bg-primary">No Data</div> -->
 					@endforelse

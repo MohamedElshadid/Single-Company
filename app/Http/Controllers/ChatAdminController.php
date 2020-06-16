@@ -1,9 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
 use App\User;
 use App\Message;
+
 class ChatAdminController extends Controller
 {
     /**
@@ -11,12 +13,15 @@ class ChatAdminController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($id = 1)
     {
         $users = User::where('id', '!=', auth()->id())->get();
-
-        $chatData=Message::where('user_id', '=', 3)->get();
-        return view('manager.adminChat',['users'=>$users,'data'=>[],'chatData'=>$chatData]);
+        // dd($id);
+        $chatData = Message::where('user_id', '=', $id)->get();
+        return view('manager.adminChat', [
+            'users' => $users, 'data' => [],
+            'chatData' => $chatData
+        ]);
     }
 
     /**
@@ -37,7 +42,25 @@ class ChatAdminController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $message = new Message;
+
+        if ($files = $request->file('file')) {
+            $uuid = Uuid::generate()->string;
+            $path = $uuid . "." . $request->file('file')->getClientOriginalExtension();
+            $desti = 'chatfiles/';
+            $files->move($desti, $path);
+            $message->img = $path;
+        }
+
+        $message->writter = Auth::user()->name;
+        $message->body = $request->body;
+        $message->user_id = Auth::user()->id;
+        $res = $message->save();
+
+        return response()->json([
+            'message' => 'User status updated successfully',
+            'data' => $res
+        ]);
     }
 
     /**
