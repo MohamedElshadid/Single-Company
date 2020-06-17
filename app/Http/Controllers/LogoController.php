@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Logo;
 use Illuminate\Http\Request;
+use Uuid ;
 
 class LogoController extends Controller
 {
@@ -35,19 +36,22 @@ class LogoController extends Controller
      */
     public function store(Request $request)
     {
-        $logo=new Logo;
-     
-        if ($files = $request->file('image')) {
-            $destinationPath = 'images/logo/'; 
-            $Image = $files->getClientOriginalName();
-            $files->move($destinationPath, $Image);
-            $logo->image=$Image; 
-        }
+        $req=$request->all();
 
-        $logo->save();
-        return redirect('/manager/logo');
+    if ($files = $request->file('image'))
+    {
+        $uuid =Uuid::generate()->string;
+        $path=$uuid.".".$request->file('image')->getClientOriginalExtension();
+        $desti='images/logo/';
+        $files->move($desti,$path);
+        $req['image']=$path;
+                
     }
 
+    $logo = Logo::create($req);
+        
+        return redirect('/manager/logo');
+    }
     /**
      * Display the specified resource.
      *
@@ -82,16 +86,20 @@ class LogoController extends Controller
     {
         $logo=Logo::find($id);
         $path = public_path()."/images/logo/".$logo->image;
-        unlink($path);      
-        if ($files = $request->file('image')) {
-            $destinationPath = 'images/logo'; 
-            $Image = $files->getClientOriginalName();
-            $files->move($destinationPath, $Image);
-            $logo->image=$Image; 
+        unlink($path); 
+             
+        $req=$request->all();
+        if ($files = $request->file('image'))
+        {
+                        $uuid =Uuid::generate()->string;
+                        $path=$uuid.".".$request->file('image')->getClientOriginalExtension();
+                        $desti='images/logo/';
+                        $files->move($desti,$path);
+                        $req['image']=$path;                        
         }
 
-        $logo->save();
-        return redirect('/manager/logo');
+        $logo = $logo->update($req);           
+        return redirect(route('manager.logo.index'));
     }
 
     /**
