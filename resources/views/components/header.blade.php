@@ -32,6 +32,9 @@
         <li class="nav-item active">
           <a class="nav-link" href="#" data-scroll="map404">Map</a>
         </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/jops" >Jops</a>
+        </li>
       </ul>
       <ul class="navbar-nav ml-5">
         <li class="nav-item active">
@@ -64,10 +67,13 @@
         <li class="nav-item active">
           <a class="nav-link" href="#" data-scroll="map404">Map</a>
         </li>
+        <li class="nav-item active">
+          <a  href="{{ route('jops') }}" style="display: block;padding: .5rem 1rem;text-decoration:none">Jobs</a>
+        </li>
       </ul>
       <ul class="navbar-nav ml-5">
         <li class="nav-item active">
-          <a href="{{ route('logout') }}"  style="display: block;padding: .5rem 1rem;text-decoration:none" onclick="event.preventDefault();
+          <a href="{{ route('logout') }}"  style="display: block;padding: .5rem .5rem;text-decoration:none" onclick="event.preventDefault();
               document.getElementById('logout-form').submit();">Logout</a>
           <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
               @csrf

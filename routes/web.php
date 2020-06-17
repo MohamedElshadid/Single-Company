@@ -33,6 +33,7 @@ Route::middleware('manager')->prefix('manager')->name('manager.')->group(functio
     Route::resource('contacts', 'ContactController');
     Route::resource('logo', 'LogoController');
     Route::resource('jops', 'JopController');
+    Route::resource('jobTrash' ,'JobTrashController');
     Route::resource('review', 'ReviewController');
     Route::resource('fbPosts', 'FacebookController');
     Route::resource('consultations', 'ConsultationController');
