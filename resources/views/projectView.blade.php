@@ -14,6 +14,9 @@
           <li class="nav-item active">
             <a style="display: block;padding: .5rem 1rem;text-decoration:none" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
           </li>
+          <li class="nav-item active">
+            <a style="display: block;padding: .5rem 1rem;text-decoration:none" href="{{ route('jops') }}" >Jops</a>
+          </li>
         </ul>
         <ul class="navbar-nav ml-5">
           <li class="nav-item active">
@@ -24,6 +27,9 @@
         <ul class="navbar-nav">
           <li class="nav-item active">
             <a style="display: block;padding: .5rem 1rem;text-decoration:none" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a style="display: block;padding: .5rem 1rem;text-decoration:none" href="{{ route('jops') }}" >Jops</a>
           </li>
         </ul>
         <ul class="navbar-nav ml-5">

@@ -33,7 +33,7 @@
           <a class="nav-link" href="#" data-scroll="map404">Map</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="/jops" >Jops</a>
+          <a style="display: block;padding: .5rem 1rem;text-decoration:none" href="{{ route('jops') }}" >Jops</a>
         </li>
       </ul>
       <ul class="navbar-nav ml-5">
