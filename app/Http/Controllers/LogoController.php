@@ -87,15 +87,15 @@ class LogoController extends Controller
         $logo=Logo::find($id);
         $path = public_path()."/images/logo/".$logo->image;
         unlink($path); 
-             
+
         $req=$request->all();
         if ($files = $request->file('image'))
         {
-                        $uuid =Uuid::generate()->string;
-                        $path=$uuid.".".$request->file('image')->getClientOriginalExtension();
-                        $desti='images/logo/';
-                        $files->move($desti,$path);
-                        $req['image']=$path;                        
+            $uuid =Uuid::generate()->string;
+            $path=$uuid.".".$request->file('image')->getClientOriginalExtension();
+            $desti='images/logo/';
+            $files->move($desti,$path);
+            $req['image']=$path;                        
         }
 
         $logo = $logo->update($req);           
