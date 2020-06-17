@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Review;
 use Illuminate\Http\Request;
+use Uuid ;
 
 class ReviewController extends Controller
 {
@@ -36,16 +37,20 @@ class ReviewController extends Controller
      */
     public function store(Request $request)
     {
-        $review=new Review();
-     
-        if ($files = $request->file('image')) {
-            $destinationPath = 'images/review/'; 
-            $Image = $files->getClientOriginalName();
-            $files->move($destinationPath, $Image);
-            $review->image=$Image; 
-        }
+        $req=$request->all();
 
-        $review->save();
+    if ($files = $request->file('image'))
+    {
+        $uuid =Uuid::generate()->string;
+        $path=$uuid.".".$request->file('image')->getClientOriginalExtension();
+        $desti='images/review/';
+        $files->move($desti,$path);
+        $req['image']=$path;
+                
+    }
+
+    $review = Review::create($req);
+        
         return redirect('/manager/review');
     }
 
@@ -83,16 +88,20 @@ class ReviewController extends Controller
     {
         $review=Review::find($id);
         $path = public_path()."/images/review/".$review->image;
-        unlink($path);
-        if ($files = $request->file('image')) {
-            $destinationPath = 'images/review'; 
-            $Image = $files->getClientOriginalName();
-            $files->move($destinationPath, $Image);
-            $review->image=$Image; 
+        unlink($path); 
+
+        $req=$request->all();
+        if ($files = $request->file('image'))
+        {
+            $uuid =Uuid::generate()->string;
+            $path=$uuid.".".$request->file('image')->getClientOriginalExtension();
+            $desti='images/review/';
+            $files->move($desti,$path);
+            $req['image']=$path;                        
         }
 
-        $review->save();
-        return redirect('/manager/review');
+        $review = $review->update($req);           
+        return redirect(route('manager.review.index'));
     }
 
     /**
