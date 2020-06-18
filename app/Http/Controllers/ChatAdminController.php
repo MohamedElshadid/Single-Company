@@ -18,7 +18,7 @@ class ChatAdminController extends Controller
     {
         $users = User::where('id', '!=', auth()->id())->get();
         
-        $chatData = Message::where('user_id', '=', $id)->get();
+        $chatData = Message::where('user_id', '=', $id)->get(); 
         // dd($id);
         return view('manager.adminChat', [
             'users' => $users, 'data' => [],
