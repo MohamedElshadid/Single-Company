@@ -589,12 +589,20 @@ i {
 }
 
 .all_project {
-    padding: 10px 100px;
+    padding: 10px;
+    margin-top: 30px;
     background-color: var(--secondColor);
     background: linear-gradient( to left, var(--secondColor), #ffefd1 112px, var(--secondColor));
     font-size: 18px;
     font-weight: bold;
+    display: block;
+    width: 18%;
     margin: 0 auto;
+}
+@media (max-width:767px){
+    .all_project{
+        width: 30%;
+    }
 }
 
 .row {

@@ -97,7 +97,7 @@
       </div>
     </div>
     <div class="col-md-9" style="background-color:#c19e70">
-      <section class="projects text-center">
+      <section class="projects text-center" style="background-color:#c19e70">
         @if(count($projects)>0)
         <h2 class="text-light">All Projects</h2>
           <div class="row">
@@ -125,5 +125,6 @@
       <!-- end projects -->
     </div>
  </div>
-
+  @component('components.footer')
+  @endcomponent
  @endsection

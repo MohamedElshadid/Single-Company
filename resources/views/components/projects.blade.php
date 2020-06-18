@@ -1,5 +1,5 @@
  <!-- start projects -->
- <section class="projects" id="project">
+<section class="projects" id="project">
    @if(count($projects)>0)
    <h2 class="text-left text-center">Projects</h2>
    <div class="container-fluid">
@@ -26,6 +26,7 @@
      @endif
    </div>
    <a class="btn all_project text-dark" href="http://localhost:8000/allproject">
-         All Projects
-       </a> </section>
+      All Projects
+    </a> 
+</section>
  <!-- end projects -->

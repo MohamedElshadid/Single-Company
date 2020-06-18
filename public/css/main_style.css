@@ -248,7 +248,8 @@ nav .contact_us i {
 .projects .project_content {
 	position: relative;
 	height: 450px;
-	background-size: cover
+	background-size: cover;
+	margin-bottom: 10px;
 }
 
 .projects .project_content .overlayer {
