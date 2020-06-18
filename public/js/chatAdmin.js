@@ -80,20 +80,23 @@ function sendToServer(message){
 	myform.append("writter",message);
 	myform.append("body",message);
 	myform.append("img",message);
+	// myform.append("user_id",user_id);
 if(myfile){
     myform.append('file',myfile)
 }
+    console.log(myform);
 	$.ajax({
 		url: "http://localhost:8000/chatList",
 		dataType: 'script',
-		cache: false,
-		contentType: false,
-		processData: false,
+		cache: true,
+		contentType: true,
+		processData: true,
 		data: myform, // Setting the data attribute of ajax with file_data
 		type: 'POST',
 		success:function(data){
-		x=JSON.parse(data);
-		console.log(x)}
+		// x=JSON.parse(data);
+		
+		console.log(data)}
     })///ajax
     console.log("##########"+myfile)
 

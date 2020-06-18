@@ -14,7 +14,7 @@ class ChatAdminController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($id = 1)
+    public function index($id =null)
     {
         $users = User::where('id', '!=', auth()->id())->get();
         
@@ -22,7 +22,8 @@ class ChatAdminController extends Controller
         // dd($id);
         return view('manager.adminChat', [
             'users' => $users, 'data' => [],
-            'chatData' => $chatData
+            'chatData' => $chatData,
+            'userID'=>$id
         ]);
     }
 
@@ -44,6 +45,11 @@ class ChatAdminController extends Controller
      */
     public function store(Request $request)
     {
+        return response()->json([
+            'message' => $request->all(),
+            
+        ]);
+        
         $message = new Message;
 
         if ($files = $request->file('file')) {
