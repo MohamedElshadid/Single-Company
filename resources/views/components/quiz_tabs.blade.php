@@ -72,53 +72,53 @@
                           </div>
                           <div class="col-md-4 col-sm-6">
                             <div class="check_style">
-                              <img src="images/decore1.jpeg" alt="picture_style" />
+                              <img src="images/decore2.jpeg" alt="picture_style" />
                               <label class="checkbox_container">
                                 <input type="radio" class="q1 x" name="check_quiz1" value="q1 2">
                                 <span class="checkmark"></span>
                               </label>
-                              <p>Classic</p>
+                              <p>Modern</p>
                             </div>
 
                           </div>
                           <div class="col-md-4 col-sm-6">
                             <div class="check_style">
-                              <img src="images/decore1.jpeg" alt="picture_style" />
+                              <img src="images/decore3.jpeg" alt="picture_style" />
                               <label class="checkbox_container">
                                 <input type="radio" class="q1 x" name="check_quiz1" value="q1 3">
                                 <span class="checkmark"></span>
                               </label>
-                              <p>Classic</p>
+                              <p>Coastal</p>
                             </div>
                           </div>
                           <div class="col-md-4 col-sm-6">
                             <div class="check_style">
-                              <img src="images/decore1.jpeg" alt="picture_style" />
+                              <img src="images/decore4.jpeg" alt="picture_style" />
                               <label class="checkbox_container">
                                 <input type="radio" class="q1 x" name="check_quiz1" value="q1 4">
                                 <span class="checkmark"></span>
                               </label>
-                              <p>Classic</p>
+                              <p>Farmhouse</p>
                             </div>
                           </div>
                           <div class="col-md-4 col-sm-6">
                             <div class="check_style">
-                              <img src="images/decore1.jpeg" alt="picture_style" />
+                              <img src="images/decore6.jpeg" alt="picture_style" />
                               <label class="checkbox_container">
                                 <input type="radio" class="q1 x" name="check_quiz1" value="q1 5">
                                 <span class="checkmark" name="check_quiz1"></span>
                               </label>
-                              <p>Classic</p>
+                              <p>Minimalist</p>
                             </div>
                           </div>
                           <div class="col-md-4 col-sm-6">
                             <div class="check_style">
-                              <img src="images/decore1.jpeg" alt="picture_style" />
+                              <img src="images/decore6.jpeg" alt="picture_style" />
                               <label class="checkbox_container">
                                 <input type="radio" class="q1 x" name="check_quiz1" value="q1 6">
                                 <span class="checkmark"></span>
                               </label>
-                              <p>Classic</p>
+                              <p>Scandinavian</p>
                             </div>
 
                           </div>
@@ -188,63 +188,63 @@
                                   <input type="checkbox" name="check_quiz3" value="1">
                                   <span class="checkmark"></span>
                                 </label>
-                                <p>Classic</p>
+                                <p>Modern</p>
                               </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
                               <div class="check_style">
-                                <img class="w-100 h-100" src="images/decore1.jpeg" alt="picture_style" />
+                                <img class="w-100 h-100" src="images/decore2.jpeg" alt="picture_style" />
                                 <label class="checkbox_container">
                                   <input type="checkbox" name="check_quiz3" value="2">
                                   <span class="checkmark"></span>
                                 </label>
-                                <p>Classic</p>
+                                <p>Scandinavian</p>
                               </div>
 
                             </div>
                             <div class="col-md-3 col-sm-6">
                               <div class="check_style">
-                                <img class="w-100 h-100" src="images/decore1.jpeg" alt="picture_style" />
+                                <img class="w-100 h-100" src="images/decore3.jpeg" alt="picture_style" />
                                 <label class="checkbox_container">
                                   <input type="checkbox" name="check_quiz3" value="3">
                                   <span class="checkmark"></span>
                                 </label>
-                                <p>Classic</p>
+                                <p>Southwest</p>
                               </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
                               <div class="check_style">
-                                <img class="w-100 h-100" src="images/decore1.jpeg" alt="picture_style" />
+                                <img class="w-100 h-100" src="images/decore2.jpeg" alt="picture_style" />
                                 <label class="checkbox_container">
                                   <input type="checkbox" name="check_quiz3" value="4">
                                   <span class="checkmark"></span>
                                 </label>
-                                <p>Classic</p>
+                                <p>Amereican</p>
                               </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
                               <div class="check_style">
-                                <img class="w-100 h-100" src="images/decore1.jpeg" alt="picture_style" />
+                                <img class="w-100 h-100" src="images/decore4.jpeg" alt="picture_style" />
                                 <label class="checkbox_container">
                                   <input type="checkbox" name="check_quiz3" value="5">
                                   <span class="checkmark"></span>
                                 </label>
-                                <p>Classic</p>
+                                <p>Coastal</p>
                               </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
                               <div class="check_style">
-                                <img class="w-100 h-100" src="images/decore1.jpeg" alt="picture_style" />
+                                <img class="w-100 h-100" src="images/decore6.jpeg" alt="picture_style" />
                                 <label class="checkbox_container">
                                   <input type="checkbox" name="check_quiz3" value="6">
                                   <span class="checkmark"></span>
                                 </label>
-                                <p>Classic</p>
+                                <p>Scandinavian</p>
                               </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
                               <div class="check_style">
-                                <img class="w-100 h-100" src="images/decore1.jpeg" alt="picture_style" />
+                                <img class="w-100 h-100" src="images/decore6.jpeg" alt="picture_style" />
                                 <label class="checkbox_container">
                                   <input type="checkbox" name="check_quiz3" value="7">
                                   <span class="checkmark"></span>
@@ -254,7 +254,7 @@
                             </div>
                             <div class="col-md-3 col-sm-6">
                               <div class="check_style">
-                                <img class="w-100 h-100" src="images/decore1.jpeg" alt="picture_style" />
+                                <img class="w-100 h-100" src="images/decore2.jpeg" alt="picture_style" />
                                 <label class="checkbox_container">
                                   <input type="checkbox" name="check_quiz3" value="8">
                                   <span class="checkmark"></span>
@@ -452,11 +452,9 @@
                   <img src="images/Alexadra_static.jpg" alt="image alexandra" />
                 </div>
                 <p class="mt-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quasi tenetur nostrum maxime.
-                </p>
+                Shop Target's home furniture collections and find furniture and accessories for every room in your home. Free shipping on orders $35+ & free returns                </p>
                 <p class="mt-3 mb-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia earum quae possimus fuga saepe, ipsa molestiae debitis libero vitae, magni nostrum illo, molestias fugit animi. Error temporibus ullam deleniti praesentium.
-                </p>
+                ovable objects intended to support various human activities                </p>
                 <h3 class="mb-3">B Koue tecta Bbi nonyuta:</h3>
                 <div class="row other_info">
                   <div class="col-sm-4 ">

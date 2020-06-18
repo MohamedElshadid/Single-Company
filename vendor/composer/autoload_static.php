@@ -600,6 +600,7 @@ class ComposerStaticInit8bc8a0d90f965d883fd98613f002cdbe
         'App\\Http\\Controllers\\FacebookController' => __DIR__ . '/../..' . '/app/Http/Controllers/FacebookController.php',
         'App\\Http\\Controllers\\HireController' => __DIR__ . '/../..' . '/app/Http/Controllers/HireController.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'App\\Http\\Controllers\\JobTrashController' => __DIR__ . '/../..' . '/app/Http/Controllers/JobTrashController.php',
         'App\\Http\\Controllers\\JopApplicantController' => __DIR__ . '/../..' . '/app/Http/Controllers/JopApplicantController.php',
         'App\\Http\\Controllers\\JopController' => __DIR__ . '/../..' . '/app/Http/Controllers/JopController.php',
         'App\\Http\\Controllers\\LogoController' => __DIR__ . '/../..' . '/app/Http/Controllers/LogoController.php',

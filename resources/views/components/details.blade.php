@@ -61,8 +61,7 @@
     </div>
 
     <div class="text-center">
-        <button class="btn btn_info mt-4" style="position: relative;top: 172px;" data-toggle="modal" data-target="#modalLoginForm">Launch
-            Modal Contact Form
+        <button class="btn btn_info mt-4" style="position: relative;top: 172px;" data-toggle="modal" data-target="#modalLoginForm">Contact Us
         </button>
     </div>
 </div>
