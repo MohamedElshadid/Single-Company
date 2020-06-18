@@ -77,21 +77,46 @@
             <p>When you're backed against the wall, break the god damn thing down.</p>
           </li>
           @forelse ($chatData as $item)
-          @if ($item->img)
-          <li class="replies">
-            <img src="/chatfiles/{{$item->img}}" alt="" />
+            @if ($item->type)
 
-            <p style="font-size:22; ">
-              <img src="/chatfiles/{{$item->img}}" style="width: 200px;height:200px;" alt="" srcset="">
-              <br>
-              {{$item->body}}</br>
-          </li>
-          @else
-          <li class="replies">
-            <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
-            <p>{{$item->body}}</p>
-          </li>
-          @endif
+            @if ($item->img)
+            <li class="replies">
+              <img src="/chatfiles/{{$item->img}}" alt="" />
+  
+              <p style="font-size:22; ">
+                <img src="/chatfiles/{{$item->img}}" style="width: 200px;height:200px;" alt="" srcset="">
+                <br>
+                {{$item->body}}</br>
+            </li>
+            @else
+            <li class="replies">
+              <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+              <p>{{$item->body}}</p>
+            </li>
+            @endif
+                
+            @else
+                
+            @if ($item->img)
+            <li class="sent">
+              <img src="/chatfiles/{{$item->img}}" alt="" />
+  
+              <p style="font-size:22; ">
+                <img src="/chatfiles/{{$item->img}}" style="width: 200px;height:200px;" alt="" srcset="">
+                <br>
+                {{$item->body}}</br>
+            </li>
+            @else
+            <li class="sent">
+              <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+              <p>{{$item->body}}</p>
+            </li>
+            @endif
+
+
+            @endif
+
+
 
           @empty
           <!-- <div class="danger bg-primary">No Data</div> -->
@@ -113,6 +138,8 @@
   <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
   <script src="/js/chatAdmin.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  
   <script >
     user_id="{{$userID}}";
   </script>

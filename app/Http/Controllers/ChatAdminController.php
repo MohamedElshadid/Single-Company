@@ -32,9 +32,13 @@ class ChatAdminController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        return response()->json([
+            'message' => $request->all(),
+            
+        ]);
+        
     }
 
     /**
@@ -45,10 +49,10 @@ class ChatAdminController extends Controller
      */
     public function store(Request $request)
     {
-        return response()->json([
-            'message' => $request->all(),
+        // return response()->json([
+        //     'message' => User::find($request->writter),
             
-        ]);
+        // ]); 
         
         $message = new Message;
 
@@ -60,9 +64,11 @@ class ChatAdminController extends Controller
             $message->img = $path;
         }
 
-        $message->writter = Auth::user()->name;
+        $message->writter = 'admin';
         $message->body = $request->body;
-        $message->user_id = Auth::user()->id;
+        $message->user_id = $request->writter;
+        $message->type = 'admin';
+        
         $res = $message->save();
 
         return response()->json([

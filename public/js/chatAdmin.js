@@ -48,7 +48,7 @@ function newMessage() {
 		reader.readAsDataURL(myfile);
 		
 	}else{
-		$('<li class="sent"><img src="http://emilcarlsson.se/assets/mikeross.png" alt="" /><p>'+
+		$('<li class="replies"><img src="http://emilcarlsson.se/assets/mikeross.png" alt="" /><p>'+
 		 message + '</p></li>').appendTo($('.messages ul'));
 	}
 	sendToServer(message);
@@ -77,27 +77,43 @@ function sendToServer(message){
 	});
 // hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
 	var myform= new FormData();
-	myform.append("writter",message);
+	myform.append("writter",user_id);
 	myform.append("body",message);
 	myform.append("img",message);
 	// myform.append("user_id",user_id);
 if(myfile){
     myform.append('file',myfile)
 }
-    console.log(myform);
 	$.ajax({
-		url: "http://localhost:8000/chatList",
+		url: "http://localhost:8000/chat",
 		dataType: 'script',
-		cache: true,
-		contentType: true,
-		processData: true,
+		cache: false,
+		contentType: false,
+		processData: false,
 		data: myform, // Setting the data attribute of ajax with file_data
 		type: 'POST',
 		success:function(data){
-		// x=JSON.parse(data);
+		x=JSON.parse(data);
 		
-		console.log(data)}
-    })///ajax
+		console.log(x)}
+	})///ajax
+
+	$.ajax({
+		url: "http://localhost:8000/manager/chatList",
+		dataType: 'script',
+		cache: false,
+		contentType: false,
+		processData: false,
+		data: myform, // Setting the data attribute of ajax with file_data
+		type: 'POST',
+		success:function(data){
+		x=JSON.parse(data);
+		
+		console.log(x)}
+	})///ajax
+	
+
+
     console.log("##########"+myfile)
 
 }
