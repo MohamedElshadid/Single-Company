@@ -48,7 +48,7 @@
                         </ul>
                     </div>
                     @endif
-                    <h2 class="title">Registration Form For Jop Application</h2>
+                    <h2 class="title">Registration Form For Job Application</h2>
                     {{ Form::open(['route' => ['applyjopform',$id],'enctype' => 'multipart/form-data','method'=>'post'])}}
                     <div class="row row-space">
                         <div class="col-2">

@@ -452,9 +452,9 @@
                   <img src="images/Alexadra_static.jpg" alt="image alexandra" />
                 </div>
                 <p class="mt-4">
-                Shop Target's home furniture collections and find furniture and accessories for every room in your home. Free shipping on orders $35+ & free returns                </p>
+                  Shop Target's home furniture collections and find furniture and accessories for every room in your home. Free shipping on orders $35+ & free returns </p>
                 <p class="mt-3 mb-4">
-                ovable objects intended to support various human activities                </p>
+                  ovable objects intended to support various human activities </p>
                 <h3 class="mb-3">B Koue tecta Bbi nonyuta:</h3>
                 <div class="row other_info">
                   <div class="col-sm-4 ">
@@ -658,7 +658,8 @@
           <h2>Thanks for You to Choice us </h2>
           <div class="custom_border"></div>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quos quisquam hic, odit vel eum laudantium fuga nesciunt. Porro quod sequi voluptates temporibus ad totam.
+            You can track your order and communicate with admin if you register <a href="/register"> Now </a>
+            <br> Please write your number in the registe form like in the quiz form 
           </p>
           <div class="row">
             <div class="col-md-6 col-sm-12">
@@ -667,12 +668,12 @@
             <div class="col-md-6 col-sm-12">
 
 
-              <button class="btn_next">nepentn HA Instgram</button>
+              <!-- <button class="btn_next">nepentn HA Instgram</button> -->
 
 
-              <div class="wiki">
+              <!-- <div class="wiki">
                 <i class="fas fa-globe"></i> <a href="">BepHYTbCr Ha CaNT</a>
-              </div>
+              </div> -->
             </div>
           </div>
 
