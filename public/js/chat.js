@@ -98,19 +98,7 @@ if(myfile){
 		console.log(x)}
 	})///ajax
 
-	$.ajax({
-		url: "http://localhost:8000/chatList",
-		dataType: 'script',
-		cache: false,
-		contentType: false,
-		processData: false,
-		data: myform, // Setting the data attribute of ajax with file_data
-		type: 'POST',
-		success:function(data){
-		x=JSON.parse(data);
-		
-		console.log(x)}
-	})///ajax
+
 	
 
     console.log("##########"+myfile)

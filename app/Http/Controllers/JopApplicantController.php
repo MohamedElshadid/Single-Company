@@ -68,7 +68,7 @@ class JopApplicantController extends Controller
 
 }
         // dd($request->all());
-        return redirect(route('applyjop'))->with('success', 'Done');
+        return redirect('/')->with('success', 'Done');
     }
 
     /**

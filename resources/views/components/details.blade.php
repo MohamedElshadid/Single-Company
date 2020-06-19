@@ -1,3 +1,9 @@
+
+@push('consultation')
+<script src="{{URL::asset('js/consultationscript.js')}}"></script>
+
+@endpush
+
 <div class="details" id="contact">
     <!-- Button trigger modal -->
     <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -13,7 +19,7 @@
 
                 @if(count($errors) > 0)
 
-                <div class="alert alert-danger">
+                <div class="alerts alert alert-danger">
                     <ul>
                         @foreach($errors->all() as $error)
                         <li>{{ $error }}</li>
@@ -26,25 +32,29 @@
                 @if($msg = Session::get('success'))
                 <div class="alert alert-success">{{$msg}}</div>
                 @endif
-                <form action="{{ url('/contact') }}" method="post">
+                    <div class="alerts alert alert-danger">
+                        <ul>
+                        </ul>  
+                    </div>
+                {{-- <form action="{{ url('/contact') }}" method="post"> --}}
 
                     @csrf
 
-                    <div class="modal-body mx-3">
+                    <div id='consmodal'class="modal-body mx-3">
                         <div class="md-form mb-2">
                             <i class="fa fa-user"></i>
-                            <input type="text" class="form-control validate" name="username">
+                            <input id='username' type="text" class="form-control validate" name="username">
 
                             <label data-error="wrong" data-success="right" for="defaultForm-email">Your Name</label>
                         </div>
                         <div class="md-form mb-2">
                             <i class="fa fa-phone"></i>
-                            <input type="text" name="phone" class="form-control validate">
+                            <input id='phoneno' type="text" name="phone" class="form-control validate">
                             <label data-error="wrong" data-success="right" for="defaultForm-pass">Your Phone</label>
                         </div>
                         <div class="form-group">
                             <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
-                                <input type="text" class="form-control datetimepicker-input" name="date" data-target="#datetimepicker1" />
+                                <input id='calldate'type="text" class="form-control datetimepicker-input" name="date" data-target="#datetimepicker1" />
                                 <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
                                     <div class="input-group-text"><i class="fa fa-calendar"></i></div>
                                 </div>
@@ -53,9 +63,9 @@
 
                     </div>
                     <div class="modal-footer d-flex justify-content-center">
-                        <button class="btn btn-success btn-block">Submit</button>
+                        <button id='conssubmit' class="btn btn-success btn-block">Submit</button>
                     </div>
-                </form>
+                {{-- </form> --}}
             </div>
         </div>
     </div>
