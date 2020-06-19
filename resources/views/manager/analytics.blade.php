@@ -19,7 +19,7 @@
     <div class="all-content-wrapper">
         <div class="analytics-sparkle-area">
             <div class="container-fluid">
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                         <div class="analytics-sparkle-line reso-mg-b-30">
                             <div class="analytics-content">
@@ -69,7 +69,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="product-sales-area mg-tb-30">
             <div class="container-fluid">
@@ -184,7 +184,7 @@
                             <div id="morris-area-chart"></div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <!-- <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                         <div class="analysis-progrebar res-mg-t-30 mg-ub-10 res-mg-b-30 table-mg-t-pro-n tb-sm-res-d-n dk-res-t-d-n">
                             <div class="analysis-progrebar-content">
                                 <h5>Usage</h5>
@@ -233,7 +233,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -296,7 +296,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <!-- <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <div class="courses-inner res-mg-t-30 table-mg-t-pro-n tb-sm-res-d-n dk-res-t-d-n">
                             <div class="courses-title">
                                 <a href="#"><img src="img/courses/1.jpg" alt="" /></a>
@@ -316,7 +316,7 @@
                                 <button type="button" class="button-default cart-btn">Read More</button>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
