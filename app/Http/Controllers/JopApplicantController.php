@@ -64,9 +64,10 @@ class JopApplicantController extends Controller
         }else{
                 JopApplicant::create($request->except(['gender','file'])        );
 
-        }
-        return redirect(route('applyjop'))->with('success', 'Done');
-     }
+}
+        // dd($request->all());
+        return redirect('/')->with('success', 'Done');
+    }
 
     /**
      * Display the specified resource.

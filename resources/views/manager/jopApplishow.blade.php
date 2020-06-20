@@ -1,4 +1,6 @@
 
+@extends('admin.base')
+
 @section('adminbase')
 
 <div class="text-center" style="width:1000px; height:600px;">

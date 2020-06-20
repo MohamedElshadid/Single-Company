@@ -9,10 +9,10 @@
     <div class="row">
         <div class="col-lg-8">
             {{ Form::open(['route' => 'manager.topics.store','enctype' => 'multipart/form-data','method'=>'post'])}}
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="exampleFormControlFile1" class="text-light">Enter Topic Id</label>
                 <input type="text" class="form-control" name="topicId">
-            </div>
+            </div> -->
             <div class="form-group text-light">
                 <label for="exampleFormControlFile1">Enter Topic Title </label>
                 <input type="text" class="form-control-file" id="exampleFormControlFile1" name="topicTitle">

@@ -1,7 +1,7 @@
  <!-- start projects -->
- <section class="projects" id="project">
+<section class="projects" id="project">
    @if(count($projects)>0)
-   <h2 class="text-left text-center">Latest Projects</h2>
+   <h2 class="text-left text-center">Projects</h2>
    <div class="container-fluid">
      <div class="row">
        @foreach ($projects as $project)
@@ -25,5 +25,8 @@
      </div>
      @endif
    </div>
- </section>
+   <a class="btn all_project text-dark" href="http://localhost:8000/allproject">
+      All Projects
+    </a> 
+</section>
  <!-- end projects -->

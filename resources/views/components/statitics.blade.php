@@ -10,34 +10,34 @@
                 <span>+</span>
                 <span>250</span>
               </div>
-              <p>projects</p>
+              <p>All projects</p>
             </div>
           </div>
           <div class="col-md-3 col-sm-6">
             <div class="counter">
               <div class="counter_content">
                 <span>+</span>
-                <span>250</span>
+                <span>350</span>
               </div>
-              <p>projects</p>
+              <p>our clients</p>
             </div>
           </div>
           <div class="col-md-3 col-sm-6">
             <div class="counter">
               <div class="counter_content">
                 <span>+</span>
-                <span>250</span>
+                <span>150</span>
               </div>
-              <p>projects</p>
+              <p>Reviews</p>
             </div>
           </div>
           <div class="col-md-3 col-sm-6">
             <div class="counter">
               <div class="counter_content">
                 <span>+</span>
-                <span>250</span>
+                <span>550</span>
               </div>
-              <p>projects</p>
+              <p>Designs</p>
             </div>
           </div>
         </div>

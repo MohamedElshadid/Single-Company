@@ -1,4 +1,4 @@
-<section class="world_video">
+<!-- <section class="world_video">
     <div class="container">
         <div class="row">
             <div class="col-md-5">
@@ -15,9 +15,9 @@
                     <div class="wrapper">
                         <div class="icon-wrapper">
                             <div class="icon">
-                                <i class="fa video2_btn fa-play" data-toggle="modal" data-target="#video2"></i>
+                                <i class="fa video2_btn fa-play" data-toggle="modal" data-target="#video2"></i> -->
                                 <!-- Modal -->
-                                <div class="modal fade" id="video2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <!-- <div class="modal fade" id="video2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-body">
@@ -47,4 +47,4 @@
     <script>
         document.getElementById("vidEle").disabled = false;
     </script>
-</section>
+</section> -->

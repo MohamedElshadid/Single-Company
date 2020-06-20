@@ -118,26 +118,51 @@
                                     <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
                                     <p>Hello, Iam the admin .. You can talk to me ; i will reply soon</p>
                                 </li>
-                                @forelse ($chatData as $item)
-                                @if ($item->img)
-                                <li class="sent">
-                                    <img src="/chatfiles/{{$item->img}}" alt="" />
-
-                                    <p style="font-size:22; ">
-                                        <img src="/chatfiles/{{$item->img}}" style="width: 200px;height:200px;" alt="" srcset="">
-                                        <br>
-                                        {{$item->body}}</br>
-                                </li>
-                                @else
-                                <li class="sent">
-                                    <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
-                                    <p>{{$item->body}}</p>
-                                </li>
-                                @endif
-
-                                @empty
-                                <!-- <div class="danger bg-primary">No Data</div> -->
-                                @endforelse
+                                            @forelse ($chatData as $item)
+                                            @if ($item->type)
+                                
+                                            @if ($item->img)
+                                            <li class="replies">
+                                            <img src="/chatfiles/{{$item->img}}" alt="" />
+                                
+                                            <p style="font-size:22; ">
+                                                <img src="/chatfiles/{{$item->img}}" style="width: 200px;height:200px;" alt="" srcset="">
+                                                <br>
+                                                {{$item->body}}</br>
+                                            </li>
+                                            @else
+                                            <li class="replies">
+                                            <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                                            <p>{{$item->body}}</p>
+                                            </li>
+                                            @endif
+                                                
+                                            @else
+                                                
+                                            @if ($item->img)
+                                            <li class="sent">
+                                            <img src="/chatfiles/{{$item->img}}" alt="" />
+                                
+                                            <p style="font-size:22; ">
+                                                <img src="/chatfiles/{{$item->img}}" style="width: 200px;height:200px;" alt="" srcset="">
+                                                <br>
+                                                {{$item->body}}</br>
+                                            </li>
+                                            @else
+                                            <li class="sent">
+                                            <img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="" />
+                                            <p>{{$item->body}}</p>
+                                            </li>
+                                            @endif
+                                
+                                
+                                            @endif
+                                
+                                
+                                
+                                        @empty
+                                        <!-- <div class="danger bg-primary">No Data</div> -->
+                                        @endforelse
                             </ul>
                         </div>
                         <div class="message-input">

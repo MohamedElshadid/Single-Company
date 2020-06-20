@@ -80,6 +80,7 @@ function sendToServer(message){
 	myform.append("writter",message);
 	myform.append("body",message);
 	myform.append("img",message);
+	// myform.append("user_id",user_id);
 if(myfile){
     myform.append('file',myfile)
 }
@@ -93,8 +94,13 @@ if(myfile){
 		type: 'POST',
 		success:function(data){
 		x=JSON.parse(data);
+		
 		console.log(x)}
-    })///ajax
+	})///ajax
+
+
+	
+
     console.log("##########"+myfile)
 
 }

@@ -1,5 +1,5 @@
    <!-- start All projects -->
-   <section class="allProjects text-center">
+   <!-- <section class="allProjects text-center">
      <div>
        <h1>All Projects</h1>
      </div>
@@ -10,5 +10,5 @@
          All Projects
        </a>
      </div>
-   </section>
+   </section> -->
    <!-- end All projects -->

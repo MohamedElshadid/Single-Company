@@ -146,4 +146,8 @@
     </div>
   </div>
 </section>
+@component('components.footer')
+@endcomponent
+
 @endsection
+

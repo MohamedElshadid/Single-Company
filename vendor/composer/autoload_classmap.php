@@ -35,6 +35,7 @@ return array(
     'App\\Http\\Controllers\\FacebookController' => $baseDir . '/app/Http/Controllers/FacebookController.php',
     'App\\Http\\Controllers\\HireController' => $baseDir . '/app/Http/Controllers/HireController.php',
     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
+    'App\\Http\\Controllers\\JobTrashController' => $baseDir . '/app/Http/Controllers/JobTrashController.php',
     'App\\Http\\Controllers\\JopApplicantController' => $baseDir . '/app/Http/Controllers/JopApplicantController.php',
     'App\\Http\\Controllers\\JopController' => $baseDir . '/app/Http/Controllers/JopController.php',
     'App\\Http\\Controllers\\LogoController' => $baseDir . '/app/Http/Controllers/LogoController.php',

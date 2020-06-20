@@ -53,8 +53,11 @@ class ChatController extends Controller
 
         }
 
+
+
         $message->writter=Auth::user()->name;
         $message->body=$request->body;
+        // $message->type="user";
         $message->user_id=Auth::user()->id;
         $res=$message->save();
 
