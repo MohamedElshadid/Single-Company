@@ -20,8 +20,8 @@
        @endforeach
      </div>
      @else
-     <div class="alert alert-info text-center" style="margin:0 auto;width:50%">
-       <h1>No Projects Yet</h1>
+     <div class="alert alert-dark text-center mb-2" style="margin:0 auto;width:50%">
+       <h3>No Projects Yet</h3>
      </div>
      @endif
    </div>

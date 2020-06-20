@@ -35,8 +35,8 @@
           </div>
         @empty
 
-          <div class="alert alert-info btn-block text-center">
-              No Topics Yet ...
+          <div class="alert alert-dark btn-block text-center">
+              <h3>No Topics Yet ...</h3>
           </div>
         @endforelse
            
