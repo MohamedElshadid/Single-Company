@@ -434,11 +434,18 @@ nav .contact_us i {
 	width: 168px;
 	left: 40%
 }
-@media(max-width:767px) {
+
+@media(max-width:421px) {
 	.clients .custom_border h2, .testimonial_slider .custom_border h2 {
 		left: 0;
 		text-align: center;
-		
+		margin: 0 auto;
+	}
+}
+@media(min-width:422px) and (max-width:767px) {
+	.clients .custom_border h2, .testimonial_slider .custom_border h2 {
+		left: 15%;
+		text-align: center;
 		margin: 0 auto;
 	}
 }
