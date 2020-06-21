@@ -1,4 +1,10 @@
+@push('token')
+<meta name="csrf-token" content="{{ csrf_token() }}">
+@endpush
+@push('quizscript')
+<script src="{{URL::asset('js/quizscript.js')}}"></script>
 
+@endpush
 <!-- Button trigger modal -->
 <button class="open_quizes_modal" style="display: none" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal_quiz">
   Launch quizes modal

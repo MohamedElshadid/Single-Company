@@ -31,7 +31,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js" ></script>
     <script src="js/map.js" ></script>
-    <script src="js/quizscript.js"></script>
     <script src="js/jquery.magnific-popup.js" ></script>
     <script src="js/jquery.subtle-slideshow.js" ></script>
     <script src="js/lazyLoading.js"></script>

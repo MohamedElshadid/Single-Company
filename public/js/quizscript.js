@@ -112,7 +112,7 @@ $('.submitquiz').on('click',(event)=>
                 }
         }
     $.ajax({
-                url: "http://localhost:8000/quiz",
+                url: "https://pure-savannah-29107.herokuapp.com/quiz",
                 dataType: 'script',
                 cache: false,
                 contentType: false,
