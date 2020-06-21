@@ -444,7 +444,7 @@ nav .contact_us i {
 }
 @media(max-width:991px) {
 	.clients .custom_border h2, .testimonial_slider .custom_border h2 {
-		left: 13%;
+		left: 18%;
 		text-align: center;
 		margin: 0 auto;
 	}
