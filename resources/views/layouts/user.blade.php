@@ -9,12 +9,12 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="js/app.js" defer></script>
     <title>Interior Design</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link href="{{ asset('css/userProfileStyle.css')}}" rel="stylesheet">
+    <link href="css/userProfileStyle.css" rel="stylesheet">
     <!-- chat liks -->
-    <link rel="stylesheet" href="{{ asset('css/chatstyle.css')}}">
+    <link rel="stylesheet" href="css/chatstyle.css">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300' rel='stylesheet' type='text/css'>
     <script src="https://use.typekit.net/hoy3lrg.js"></script>
     <script>
@@ -39,7 +39,7 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- chat scripts -->
     <script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script>
-    <script src="{{ asset('js/chat.js') }}"></script>
+    <script src="js/chat.js"></script>
 </body>
 
 </html>
