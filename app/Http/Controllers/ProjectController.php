@@ -56,7 +56,7 @@ class ProjectController extends Controller
                     // dd('dd');
     }
 
-    $project = Project::create($req);
+   $req->save();
         //
         // dd($project);
         return redirect(route('manager.project.index'));
