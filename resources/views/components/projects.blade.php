@@ -25,7 +25,7 @@
      </div>
      @endif
    </div>
-   <a class="btn all_project text-dark" href="http://localhost:8000/allproject">
+   <a class="btn all_project text-dark" href="/allproject">
       All Projects
     </a> 
 </section>
