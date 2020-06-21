@@ -58,7 +58,7 @@ $('#conssubmit').on('click',(event)=>
                 contentType: false,
                 processData: false,
                 data: myform,                         // Setting the data attribute of ajax with file_data
-                type: 'POST',
+                type: 'GET',
                 success:function(data)
                 {
                     console.log(consform.time);
