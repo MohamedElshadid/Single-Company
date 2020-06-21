@@ -442,9 +442,9 @@ nav .contact_us i {
 		margin: 0 auto;
 	}
 }
-@media(max-width:991px) {
+@media(min-width:768px) and (max-width:991px) {
 	.clients .custom_border h2, .testimonial_slider .custom_border h2 {
-		left: 18%;
+		left: 20%;
 		text-align: center;
 		margin: 0 auto;
 	}
