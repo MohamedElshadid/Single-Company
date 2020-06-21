@@ -52,7 +52,7 @@
                             <label data-error="wrong" data-success="right" for="defaultForm-pass">Your Phone</label>
                         </div>
                         <div class="md-form mb-2">
-                            <i class="fa fa-message"></i>
+                            <i class="fa fa-comments"></i>
                             <textarea id='comment' type="text" name="comment" class="form-control validate"></textarea>
                             <label data-error="wrong" data-success="right" for="defaultForm-pass">Your Comment</label>
                         </div>
