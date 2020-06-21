@@ -2,7 +2,7 @@
 <meta name="csrf-token" content="{{ csrf_token() }}">
 @endpush
 @push('quizscript')
-<script src="{{URL::asset('js/quizscript.js')}}"></script>
+<script src="js/quizscript.js"></script>
 
 @endpush
 <!-- Button trigger modal -->
