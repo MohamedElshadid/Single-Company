@@ -44,7 +44,7 @@ class ProjectController extends Controller
      */
     public function store(Request $request)
     {
-    $req=$request->all();
+    
 
     if ($files = $request->file('mainimage'))
     {
@@ -52,11 +52,12 @@ class ProjectController extends Controller
                     $path=$uuid.".".$request->file('mainimage')->getClientOriginalExtension();
                     $desti='projectimages/';
                     $files->move($desti,$path);
-                    $req['mainimage']=$path;
+                    
                     // dd('dd');
     }
-
-   $req->save();
+    $req=$request->all();
+    $req['mainimage']=$path;
+    $project = Project::create($req);
         //
         // dd($project);
         return redirect(route('manager.project.index'));
