@@ -36,7 +36,6 @@
     <script src="js/lazyLoading.js"></script>
     <script src="js/main.js" ></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=en_RU&amp;apikey=45185f8a-5595-4dca-a730-067482a1af71" type="text/javascript"></script>
-
   @stack('quizscript')
   @stack('consultation')
 

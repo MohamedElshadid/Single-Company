@@ -10,9 +10,9 @@ $(function () {
      })
 // when click out modal video will close
 
-     $(".modal").click(function(){
-            $(this).children().find("video").get(0).pause()
-     })
+    //  $(".modal").click(function(){
+    //         $(this).children().find("video").get(0).pause()
+    //  })
 
 // strat progress
     function activeNavQuisez(willclick) {

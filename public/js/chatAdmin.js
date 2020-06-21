@@ -85,7 +85,7 @@ if(myfile){
     myform.append('file',myfile)
 }
 	$.ajax({
-		url: "https://pure-savannah-29107.herokuapp.com/manager/chatList",
+		url: "http://localhost:8000/manager/chatList",
 		dataType: 'script',
 		cache: false,
 		contentType: false,
@@ -99,7 +99,7 @@ if(myfile){
 	})///ajax
 
 	$.ajax({
-		url: "https://pure-savannah-29107.herokuapp.com/manager/chatList",
+		url: "http://localhost:8000/manager/chatList",
 		dataType: 'script',
 		cache: false,
 		contentType: false,
