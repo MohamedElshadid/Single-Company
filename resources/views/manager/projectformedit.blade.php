@@ -40,7 +40,7 @@
           <br>
           <div class="custom-file form-control  " style="width: 50%">
             <br>
-            {!! Form::file('mainimage', ['class'=>'custom-file-input form-control','id'=>"validatedCustomFile",'onchange'=>'showimage(this)']) !!} <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+            {!! Form::file('mainImage', ['class'=>'custom-file-input form-control','id'=>"validatedCustomFile",'onchange'=>'showimage(this)']) !!} <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
             <div class="invalid-feedback">Example invalid custom file feedback</div>
           </div>
         </div>
