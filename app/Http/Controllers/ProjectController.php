@@ -101,13 +101,13 @@ class ProjectController extends Controller
 
             $req=$request->all();
 
-            if ($files = $request->file('mainimage'))
+            if ($files = $request->file('mainImage'))
             {
                             $uuid =Uuid::generate()->string;
-                            $path=$uuid.".".$request->file('mainimage')->getClientOriginalExtension();
+                            $path=$uuid.".".$request->file('mainImage')->getClientOriginalExtension();
                             $desti='projectimages/';
                             $files->move($desti,$path);
-                            $req['mainimage']=$path;
+                            $req['mainImage']=$path;
                             // dd('dd');
             }
 
