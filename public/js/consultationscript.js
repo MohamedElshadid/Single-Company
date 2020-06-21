@@ -9,6 +9,7 @@ var consform ={
     phone:'',
     name:'',
     time:'',
+    comment:''
 
 }
 console.log('ssssssssssaaaaaaaaa')
@@ -27,7 +28,11 @@ $('#consmodal').on('change','#username',(event)=>
             consform.phone  = q1.prop('value'); //get value
 
         });//question 1 answer
-
+        $('#consmodal').on('change','#comment',(event)=>
+        {
+                q1=$(event.target);
+                consform.comment  = q1.prop('value'); 
+        });//question 1 answer
         $('#consmodal').on('change','#calldate',(event)=>
            {
             console.log(event.target)
@@ -43,6 +48,7 @@ $('#conssubmit').on('click',(event)=>
 
     myform.append('username',consform.name);
     myform.append('phone',consform.phone);
+    myform.append('comment',consform.comment);
     myform.append('date',consform.time);
     $('.alerts ul').html('');
     $.ajax({
@@ -55,6 +61,7 @@ $('#conssubmit').on('click',(event)=>
                 type: 'POST',
                 success:function(data)
                 {
+                    console.log(consform.time);
                     x=JSON.parse(data);
                     if(x.erors)
                     {   

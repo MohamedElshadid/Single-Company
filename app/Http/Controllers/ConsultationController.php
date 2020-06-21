@@ -32,6 +32,7 @@ class ConsultationController extends Controller
                 $validator = Validator::make($request->all(), [
                     'username'   =>     'required',
                     'phone'      =>     'required',
+                    'comment' => 'required',
                     'date' => 'date '
                      ]);
                 if ($validator->fails()) {    
@@ -43,12 +44,14 @@ class ConsultationController extends Controller
             $consultation->name =$request->username;
             $consultation->timeToCall=$request->date;
             $consultation->phone=$request->phone;
+            $consultation->comment = $request->comment;
             $consultation->save();
             $usersData = array(
 
                     'username'  =>  $request->username,
                     'phone'     =>  $request->phone,
-                    'date'      =>  $request->date
+                    'date'      =>  $request->date,
+                    'comment' =>$request->comment
             );
 
             // Mail::to('yassminelbialy@gmail.com')
