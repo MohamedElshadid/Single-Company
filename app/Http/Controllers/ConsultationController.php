@@ -33,7 +33,7 @@ class ConsultationController extends Controller
                     'username'   =>     'required',
                     'phone'      =>     'required',
                     'comment' => 'required',
-                    'date' => 'date '
+                    'date'=>'string'
                      ]);
                 if ($validator->fails()) {    
                     return response()->json(['erors'=>$validator->messages()->all()]);
