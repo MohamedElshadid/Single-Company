@@ -49,16 +49,16 @@ $('#conssubmit').on('click',(event)=>
     myform.append('username',consform.name);
     myform.append('phone',consform.phone);
     myform.append('comment',consform.comment);
-    //myform.append('date',consform.time);
+    myform.append('date',consform.time);
     $('.alerts ul').html('');
     $.ajax({
-                url: "https://pure-savannah-29107.herokuapp.com/contact",
+                url: "http://localhost:8000/contact",
                 dataType: 'script',
                 cache: false,
                 contentType: false,
                 processData: false,
                 data: myform,                         // Setting the data attribute of ajax with file_data
-                type: 'GET',
+                type: 'POST',
                 success:function(data)
                 {
                     console.log(consform.time);
