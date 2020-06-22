@@ -49,11 +49,7 @@ class ChatAdminController extends Controller
      */
     public function store(Request $request)
     {
-        // return response()->json([
-        //     'message' => User::find($request->writter),
-            
-        // ]); 
-        
+    
         $message = new Message;
 
         if ($files = $request->file('file')) {
