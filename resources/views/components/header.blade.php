@@ -9,7 +9,7 @@
     @guest
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="{{ url('/') }}">Home</a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="#" data-scroll="project">projects</a>
@@ -35,6 +35,7 @@
         <li class="nav-item active">
           <a style="display: block;padding: .5rem 1rem;text-decoration:none" href="{{ route('jops') }}" >Jobs</a>
         </li>
+
       </ul>
       <ul class="navbar-nav ml-5">
         <li class="nav-item active">
@@ -72,6 +73,9 @@
         </li>
       </ul>
       <ul class="navbar-nav ml-5">
+        <li class="nav-item active">
+          <a style="display: block;padding: .5rem 1rem;text-decoration:none" href="{{ url('/profile') }}">Profile Account</a>
+        </li>
         <li class="nav-item active">
           <a href="{{ route('logout') }}"  style="display: block;padding: .5rem .5rem;text-decoration:none" onclick="event.preventDefault();
               document.getElementById('logout-form').submit();">Logout</a>

@@ -34,6 +34,9 @@
         </ul>
         <ul class="navbar-nav ml-5">
           <li class="nav-item active">
+            <a style="display: block;padding: .5rem 1rem;text-decoration:none" href="{{ url('/profile') }}">Profile Account</a>
+          </li>
+          <li class="nav-item active">
             <a href="{{ route('logout') }}"  style="display: block;padding: .5rem 1rem;text-decoration:none" onclick="event.preventDefault();
                 document.getElementById('logout-form').submit();">Logout</a>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

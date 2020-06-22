@@ -12,6 +12,7 @@
     <script src="js/app.js" defer></script>
     <title>Interior Design</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="css/main_style.css" rel="stylesheet">
     <link href="css/userProfileStyle.css" rel="stylesheet">
     <!-- chat liks -->
     <link rel="stylesheet" href="css/chatstyle.css">

@@ -1,11 +1,48 @@
 @extends('layouts.user')
 
 @section('content')
-<a href="{{ route('logout') }}" class="btn btn-danger" style="color:white !important;margin:10px;padding:10px;font-size:20px;float:right;border-radius:10px" onclick="event.preventDefault();
+<nav class="navbar navbar-expand-lg navbar-dark text-center" style="background-color:#000 !important">
+    <a class="navbar-brand" href="#"><img src="/images/company_logo.PNG" alt="logo image"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" ></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      @guest
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a style="display: block;padding: .5rem 1rem;text-decoration:none" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a style="display: block;padding: .5rem 1rem;text-decoration:none" href="{{ route('jops') }}" >Jops</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-5">
+          <li class="nav-item active">
+            <a style="display: block;padding: .5rem 1rem;text-decoration:none" href="{{ route('login') }}">Login</a>
+          </li>
+        </ul>
+      @else
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a style="display: block;padding: .5rem 1rem;text-decoration:none" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a style="display: block;padding: .5rem 1rem;text-decoration:none" href="{{ route('jops') }}" >Jops</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-5">
+          <li class="nav-item active">
+            <a href="{{ route('logout') }}"  style="display: block;padding: .5rem 1rem;text-decoration:none" onclick="event.preventDefault();
                 document.getElementById('logout-form').submit();">Logout</a>
-<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-    @csrf
-</form>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>            
+          </li>
+        </ul>
+      @endguest
+    </div>
+  </nav>
 <div style="clear:both"></div>
 <div class="container">
     <div class="page-header mt-4">
