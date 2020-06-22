@@ -57,7 +57,7 @@
                                 <label data-error="wrong" data-success="right" for="defaultForm-pass">Your Comment</label>
                             </div>
                             <div class="md-form mb-2">
-                                <i class="fa fa-time"></i>
+                                <i class="fa fa-clock-o"></i>
                                 <input id='date' type="date" name="comment" class="form-control validate">
                                 <label data-error="wrong" data-success="right" for="defaultForm-pass">Your date</label>
                             </div>
