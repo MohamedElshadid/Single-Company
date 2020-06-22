@@ -1,4 +1,4 @@
-@extends('layouts.navbar')
+@extends('layouts.viewProject')
 
 @section('content')
 <div class="header" style="height:550px">
