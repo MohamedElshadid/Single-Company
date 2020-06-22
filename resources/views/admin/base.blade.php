@@ -83,7 +83,7 @@
                                 <a class="nav-link" href="/manager/consultations">Consultations</a>
                                 <a class="nav-link" href="/manager/contacts">Contacts</a>
                                 <a class="nav-link" href="/manager/AdminOrder">Users Orders</a>
-                                <a class="nav-link" href="/manager/fbPosts">FaceBook Posts</a>
+                                <!-- <a class="nav-link" href="/manager/fbPosts">FaceBook Posts</a> -->
                                 <a class="nav-link" href="/manager/jops">Jobs</a>
                                 <a class="nav-link" href="/manager/topics">Topics</a>
 
