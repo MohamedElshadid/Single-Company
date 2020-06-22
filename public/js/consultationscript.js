@@ -33,7 +33,7 @@ $('#consmodal').on('change','#username',(event)=>
                 q1=$(event.target);
                 consform.comment  = q1.prop('value'); 
         });//question 1 answer
-        $('#consmodal').on('change','#calldate',(event)=>
+        $('#consmodal').on('change','#date',(event)=>
            {
             console.log(event.target)
             q1=$(event.target);// get element

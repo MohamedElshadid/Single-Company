@@ -56,13 +56,10 @@
                                 <textarea id='comment' type="text" name="comment" class="form-control validate"></textarea>
                                 <label data-error="wrong" data-success="right" for="defaultForm-pass">Your Comment</label>
                             </div>
-                            <div class="form-group">
-                                <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
-                                    <input id='calldate'type="text" class="form-control datetimepicker-input" name="date" data-target="#datetimepicker1" />
-                                    <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
-                                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                                    </div>
-                                </div>
+                            <div class="md-form mb-2">
+                                <i class="fa fa-time"></i>
+                                <input id='date' type="date" name="comment" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="defaultForm-pass">Your date</label>
                             </div>
     
                         </div>

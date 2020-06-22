@@ -27,7 +27,7 @@ class ConsultationController extends Controller
             'username'   =>     'required',
             'phone'      =>     'required',
             'comment' => 'required',
-            // 'date'=>'string'
+            'date'=>'date'
         ]);
         if ($validator->fails()) {
             return response()->json(['erors' => $validator->messages()->all()]);
