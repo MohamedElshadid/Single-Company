@@ -52,7 +52,7 @@ $('#conssubmit').on('click',(event)=>
     myform.append('date',consform.time);
     $('.alerts ul').html('');
     $.ajax({
-                url: "http://localhost:8000/contact",
+                url: "https://pure-savannah-29107.herokuapp.com/contact",
                 dataType: 'script',
                 cache: false,
                 contentType: false,
