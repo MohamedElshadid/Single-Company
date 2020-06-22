@@ -112,7 +112,7 @@ $('.submitquiz').on('click',(event)=>
                 }
         }
     $.ajax({
-                url: "http://localhost:8000/quiz",
+                url: "/quiz",
                 dataType: 'script',
                 cache: false,
                 contentType: false,

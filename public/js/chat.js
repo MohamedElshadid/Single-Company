@@ -85,7 +85,7 @@ if(myfile){
     myform.append('file',myfile)
 }
 	$.ajax({
-		url: "http://localhost:8000/chat",
+		url: "/chat",
 		dataType: 'script',
 		cache: false,
 		contentType: false,
