@@ -18,6 +18,7 @@
 
     <title>{{ config('base.name', 'Interior Design') }}</title>
     <link href="/admin/dist/css/styles.css" rel="stylesheet" />
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
 </head>
 
@@ -31,6 +32,38 @@
                 </div>
             </div>
         </form>
+       <ul>
+        <li class="dropdown dropdown-notification nav-item  dropdown-notifications">
+            <a class="nav-link nav-link-label" href="#" data-toggle="dropdown">
+                <i class="fa fa-bell"> </i>
+                <span
+                    class="badge badge-pill badge-default badge-danger badge-default badge-up badge-glow   notif-count"
+                    data-count="0">0</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                <li class="dropdown-menu-header">
+                    <h6 class="dropdown-header m-0 text-center">
+                        <span class="grey darken-2 text-center"> Notification</span>
+                    </h6>
+                </li>
+                <li class="scrollable-container ps-container ps-active-y media-list w-100">
+                    <a href="">
+                        <div class="media">
+                            <div class="media-body">
+                                <h6 class="media-heading text-left ">Test</h6>
+                                <small>
+                                    <p class=" text-muted text-lefy"> 20-05-2020 - 06:00 pm
+                                    </p>
+                                    <br>
+                                </small>
+                            </div>
+                        </div>
+                    </a>
+
+                </li>
+            </ul>
+        </li>
+       </ul>
         <!-- Navbar-->
         <ul class="navbar-nav ml-auto ml-md-0">
             <li class="nav-item dropdown">
@@ -44,6 +77,7 @@
                     </form>
                 </div>
             </li>
+
         </ul>
     </nav>
     <div id="layoutSidenav">
@@ -126,6 +160,21 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="/admin/dist/js/scripts.js"></script>
+
+<script src="https://js.pusher.com/6.0/pusher.min.js"></script>
+    <script>
+      $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+          var pusher = new Pusher('e93e2aeb6e03150f995f', {
+            encrypted: false
+      });
+      
+  </script>
+    <script src="/js/notification.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
     {{-- <script src="/admin/dist/assets/demo/chart-area-demo.js"></script>
         <script src="/admin/dist/assets/demo/chart-bar-demo.js"></script>

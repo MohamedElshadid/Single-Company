@@ -1,4 +1,4 @@
-<section class="info">
+<section class="info" id="info">
     <h1 class="text-center">Info</h1>
     <div class="container">
         <div class="row">

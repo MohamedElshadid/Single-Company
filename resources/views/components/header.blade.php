@@ -20,9 +20,9 @@
         <li class="nav-item active">
           <a class="nav-link" href="#" data-scroll="client">Clients</a>
         </li>
-        <!-- <li class="nav-item active">
+        <li class="nav-item active">
           <a class="nav-link" href="#" data-scroll="info">Info</a>
-        </li> -->
+        </li> 
         <li class="nav-item active">
           <a class="nav-link" href="#" data-scroll="contact">Contact</a>
         </li>

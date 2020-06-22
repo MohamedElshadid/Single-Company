@@ -34,4 +34,10 @@
   </thead>
 </table>
 
+<div class="row text-center" style="padding: 0;margin:0">
+  <div class="col-12 text-center d-flex justify-content-center">
+      {{$data->links()}}
+  </div>
+</div>
+
 @endsection

@@ -19,7 +19,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        return view('manager.categoryindex',['data'=>Category::all()]);
+        return view('manager.categoryindex',['data'=>Category::paginate(5)]);
         //
     }
 

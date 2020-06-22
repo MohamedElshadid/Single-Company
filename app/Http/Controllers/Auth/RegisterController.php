@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Evente\NewNotification;
+use Auth;
 use App\Providers\RouteServiceProvider;
 use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -75,5 +77,10 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
             'phone' => $data['phone']
         ]);
+        $data=[
+            'name'=> Auth::user()->name
+        ];
+        event(new NewNotification($data));
+
     }
 }

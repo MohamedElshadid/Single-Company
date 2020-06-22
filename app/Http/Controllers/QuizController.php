@@ -83,6 +83,8 @@ class QuizController extends Controller
 
               }
               $quiz->save();
+              
+           
               Mail::to('yassminelbialy@gmail.com')
               ->send(new SendQuizMail ($quiz));
 
