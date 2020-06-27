@@ -110,7 +110,7 @@
               <div class="border_box"></div>
               <div class="custom_border"></div>
               <div>
-                <p>
+                <p style="font-weight: bold;">
                   {{$project->title}}
                 </p>
                 <p class=""> {{$project->hint}}</p>
