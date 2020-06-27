@@ -1,5 +1,8 @@
 $(function () {
 
+
+
+
 // when click play video will play auto
     $(".fa-play").click(function(){
         $(this).siblings("div").children().find("video").get(0).play()
@@ -151,7 +154,7 @@ $(function () {
     $(".owl-carousel").owlCarousel({
         slideSpeed: 10,
         autoplay: 10,
-        loop: true,
+        loop: false,
         margin: 15,
         responsive: {
             0: { items: 2 },
@@ -219,4 +222,43 @@ $(function () {
         }, 1500);
         event.preventDefault();
     });
+
+
+    
+  // start statitics
+  let nCount = (selector) => {
+    $(selector).each(function () {
+      $(this).animate(
+        {
+          Counter: $(this).text(),
+        },
+        {
+
+          duration: 6000,
+
+          easing: "swing",
+
+
+          step: function (value) {
+            $(this).text(Math.ceil(value));
+          },
+        }
+      );
+    });
+  };
+
+  let a = 0;
+  $(window).scroll(function () {
+
+    let oTop = $(".statitics").offset().top - window.innerHeight;
+    if (a == 0 && $(window).scrollTop()+200 >= oTop) {
+        $(".statitics .counter").css({
+            transform:"scale(1.2)",
+            transition:"all 3s"
+        })
+      a++;
+      nCount(".counter_content > .number_c");
+    }
+  });
+  
 });
