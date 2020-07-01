@@ -75,7 +75,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-                        <!-- <div class="product-sales-chart">
+                        <div class="product-sales-chart">
                             <div class="portlet-title">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -92,17 +92,17 @@
                             </div>
                             <ul class="list-inline cus-product-sl-rp">
                                 <li>
-                                    <h5><i class="fa fa-circle" style="color: #006DF0;"></i>CSE</h5>
+                                    <!-- <h5><i class="fa fa-circle" style="color: #006DF0;"></i>CSE</h5> -->
                                 </li>
                                 <li>
-                                    <h5><i class="fa fa-circle" style="color: #933EC5;"></i>Accounting</h5>
+                                    <!-- <h5><i class="fa fa-circle" style="color: #933EC5;"></i>Accounting</h5> -->
                                 </li>
                                 <li>
-                                    <h5><i class="fa fa-circle" style="color: #65b12d;"></i>Electrical</h5>
+                                    <!-- <h5><i class="fa fa-circle" style="color: #65b12d;"></i>Electrical</h5> -->
                                 </li>
                             </ul>
                             <div id="extra-area-chart" style="height: 356px;"></div>
-                        </div> -->
+                        </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                         <div class="white-box analytics-info-cs mg-b-10 res-mg-b-30 res-mg-t-30 table-mg-t-pro-n tb-sm-res-d-n dk-res-t-d-n">
@@ -172,13 +172,13 @@
                             </div>
                             <ul class="list-inline cus-product-sl-rp">
                                 <li>
-                                    <h5><i class="fa fa-circle" style="color: #006DF0;"></i>Python</h5>
+                                    <!-- <h5><i class="fa fa-circle" style="color: #006DF0;"></i>Python</h5> -->
                                 </li>
                                 <li>
-                                    <h5><i class="fa fa-circle" style="color: #933EC5;"></i>PHP</h5>
+                                    <!-- <h5><i class="fa fa-circle" style="color: #933EC5;"></i>PHP</h5> -->
                                 </li>
                                 <li>
-                                    <h5><i class="fa fa-circle" style="color: #65b12d;"></i>Java</h5>
+                                    <!-- <h5><i class="fa fa-circle" style="color: #65b12d;"></i>Java</h5> -->
                                 </li>
                             </ul>
                             <div id="morris-area-chart"></div>

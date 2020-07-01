@@ -431,7 +431,7 @@
                                     <input type="checkbox">
                                     <span class="checkmark"></span>
                                   </label>
-                                  Bbi contawerecb c <a href="#">nonmtmnkon Kohqnma9hoctnmAohqnma9hoctnmA</a>
+                                  <!-- Bbi contawerecb c <a href="#">nonmtmnkon Kohqnma9hoctnmAohqnma9hoctnmA</a> -->
                                 </div>
                               </div>
                             </div>
